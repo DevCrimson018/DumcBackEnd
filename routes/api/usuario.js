@@ -68,3 +68,5 @@ function generateToken (usuario) {
         
     }
 }
+
+module.exports = router
