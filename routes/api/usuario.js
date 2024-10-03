@@ -24,17 +24,6 @@ router.get("/:id", async (req, res) => {
     }
 })
 
-router.post("/", async (req, res) => {
-    try {
-        const usuario = req.body
-
-        const newUsuario = await Usuario.create(usuario)
-
-        return res.json(newUsuario)
-    } catch (error) {
-        console.log(error);
-    }
-})
 
 router.put("/:id", async (req, res) => {
     try {
