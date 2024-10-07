@@ -2,6 +2,8 @@ const router = require("express").Router()
 
 const Disciplina = require("../../models/disciplina.model") 
 
+
+//Disciplina 
 router.get("/", async (req, res) => {
     try {
         const disciplinas = await Disciplina.find()
