@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
     try {
         const ausencia = req.body
 
-        const newAusencia = await Uniformidad.create(ausencia)
+        const newAusencia = await Ausencia.create(ausencia)
 
         return res.json(newAusencia)
     } catch (error) {
