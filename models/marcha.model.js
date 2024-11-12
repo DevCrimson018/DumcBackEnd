@@ -9,56 +9,74 @@ const marchaSchema = new Schema({
 
 
     puntosInstructor : {
+        evaluadores: {type: String, required: false},
         usuario: {type: String, required: false},
         puntos: {type: Number, required: false},
         comentario: {type: String, required: false}
     },
 
     puntosPliegueYRepliegue : {
+        evaluadores: {type: String, required: false},
         usuario: {type: String, required: false},
+        V1: {type: Number, required: false},
+        V2: {type: Number, required: false},
         puntos: {type: Number, required: false},
         comentario: {type: String, required: false}
     },
 
     puntosCreatividad : {
+        evaluadores: {type: String, required: false},
         usuario: {type: String, required: false},
+        V1: {type: Number, required: false},
+        V2: {type: Number, required: false},
         puntos: {type: Number, required: false},
         comentario: {type: String, required: false}
     },
 
     puntosGradoDificultad : {
+        evaluadores: {type: String, required: false},
         usuario: {type: String, required: false},
+        V1: {type: Number, required: false},
+        V2: {type: Number, required: false},
         puntos: {type: Number, required: false},
         comentario: {type: String, required: false}
     },
 
     presicionExhibiciones : {
+        evaluadores: {type: String, required: false},
         usuario: {type: String, required: false},
+        V1: {type: Number, required: false},
+        V2: {type: Number, required: false},
         puntos: {type: Number, required: false},
         comentario: {type: String, required: false}
     },
     
     puntosImpactoDelJuez : {
+        evaluadores: {type: String, required: false},
         usuario: {type: String, required: false},
         puntos: {type: Number, required: false},
         comentario: {type: String, required: false}
     },
 
     puntosTiempos : {
+        evaluadores: {type: String, required: false},
         usuario: {type: String, required: false},
-        puntos: {type: Number, required: false},
+        tiempoV1: {type: Number, required: false},
+        tiempoV2: {type: Number, required: false},
+        tiempoGeneral: {type: Number, required: false},
         comentario: {type: String, required: false}
     },
 
     puntosReglamentarias : {
+        evaluadores: {type: String, required: false},
         usuario: {type: String, required: false},
         puntos: {type: Number, required: false},
         comentario: {type: String, required: false}
     },
 
     puntosFaltas : {
+        evaluadores: {type: String, required: false},
         usuario: {type: String, required: false},
-        puntos: {type: Number, required: false},
         comentario: {type: String, required: false}
     },
 
