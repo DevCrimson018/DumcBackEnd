@@ -62,8 +62,11 @@ const marchaSchema = new Schema({
         evaluadores: {type: String, required: false},
         usuario: {type: String, required: false},
         tiempoV1: {type: Number, required: false},
+        puntosV1: {type: Number, required: false},
         tiempoV2: {type: Number, required: false},
+        puntosV2: {type: Number, required: false},
         tiempoGeneral: {type: Number, required: false},
+        puntosGeneral: {type: Number, required: false},
         comentario: {type: String, required: false}
     },
 
