@@ -80,7 +80,9 @@ const marchaSchema = new Schema({
     puntosFaltas : {
         evaluadores: {type: String, required: false},
         usuario: {type: String, required: false},
-        comentario: {type: String, required: false}
+        faltas: [
+            {type: String, required: false}
+        ]
     },
 
 })
