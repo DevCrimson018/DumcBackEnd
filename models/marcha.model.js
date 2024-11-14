@@ -6,7 +6,9 @@ const marchaSchema = new Schema({
     zona: {type: Number, required: true},
     club: {type: String, required: true},
     instructor: {type: String, require: true},
-
+    tipos: [
+        {type: string}
+    ],
 
     puntosInstructor : {
         evaluadores: {type: String, required: false},
@@ -84,6 +86,13 @@ const marchaSchema = new Schema({
             {type: String, required: false}
         ]
     },
+
+    sincronizacionMusica : {
+        usuario: {type: String, required: false},
+        evaluadores: {type: String, required: false},
+        puntos: {type: Number, required: false},
+        comentario: {type: String, required: false}
+    }
 
 })
 
