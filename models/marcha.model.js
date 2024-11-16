@@ -6,8 +6,8 @@ const marchaSchema = new Schema({
     zona: {type: Number, required: true},
     club: {type: String, required: true},
     instructor: {type: String, require: true},
-    tiposV1: {type: string, required: true},
-    tiposV2: {type: string, required: true},
+    tiposV1: {type: String, required: true},
+    tiposV2: {type: String, required: true},
 
     puntosInstructor : {
         evaluadores: {type: String, required: false},
