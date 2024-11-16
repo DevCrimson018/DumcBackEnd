@@ -9,6 +9,11 @@ router.get("/", async (req, res) => {
         return res.json(uniformidades)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -20,6 +25,11 @@ router.get("/:id", async (req, res) => {
         return res.json(uniformidad)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
         
     }
 })
@@ -33,6 +43,11 @@ router.post("/", async (req, res) => {
         return res.json(newUniformidad)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -46,6 +61,11 @@ router.put("/:id", async (req, res) => {
         return res.json(updatedUniformidad)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -57,6 +77,11 @@ router.delete("/:id", async (req, res) => {
          return res.json(deletedUniformidad)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 

@@ -11,6 +11,11 @@ router.get("/", async (req, res) => {
         return res.json(disciplinas)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -22,7 +27,11 @@ router.get("/:id", async (req, res) => {
         return res.json(disciplina)
     } catch (error) {
         console.log(error);
-        
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -35,6 +44,11 @@ router.post("/", async (req, res) => {
         return res.json(newDisciplina)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -48,6 +62,11 @@ router.put("/:id", async (req, res) => {
         return res.json(updatedDisciplina)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -59,6 +78,11 @@ router.delete("/:id", async (req, res) => {
          return res.json(deletedDisciplina)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 

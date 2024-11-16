@@ -24,6 +24,11 @@ router.post("/signin", async (req, res) => {
         
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -41,6 +46,11 @@ router.post("/signup", async (req, res) => {
 
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -58,6 +68,11 @@ function generateToken (usuario) {
         return token
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
         
     }
 }

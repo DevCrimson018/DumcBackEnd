@@ -11,6 +11,11 @@ router.get("/", async (req, res) => {
         return res.json(marchas)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -22,6 +27,11 @@ router.get("/:id", async (req, res) => {
         return res.json(marcha)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
         
     }
 })
@@ -35,6 +45,11 @@ router.post("/", async (req, res) => {
         return res.json(newMarcha)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -48,6 +63,11 @@ router.put("/:id", async (req, res) => {
         return res.json(updatedMarcha)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -59,6 +79,11 @@ router.delete("/:id", async (req, res) => {
          return res.json(deletedMarcha)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 

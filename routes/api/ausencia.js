@@ -10,6 +10,11 @@ router.get("/", async (req, res) => {
         return res.json(ausencias)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -21,6 +26,11 @@ router.get("/:id", async (req, res) => {
         return res.json(ausencia)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
         
     }
 })
@@ -34,6 +44,11 @@ router.post("/", async (req, res) => {
         return res.json(newAusencia)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -47,6 +62,11 @@ router.put("/:id", async (req, res) => {
         return res.json(updatedAusencia)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -58,6 +78,11 @@ router.delete("/:id", async (req, res) => {
          return res.json(deletedAusencia)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 

@@ -9,6 +9,11 @@ router.get("/", async (req, res) => {
         return res.json(usuarios)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -20,6 +25,11 @@ router.get("/:id", async (req, res) => {
         return res.json(usuario)
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
         
     }
 })
@@ -35,6 +45,11 @@ router.put("/:id", async (req, res) => {
         return res.json({token: generateToken(updatedUsuario)})
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
     }
 })
 
@@ -54,6 +69,11 @@ function generateToken (usuario) {
         return token
     } catch (error) {
         console.log(error);
+        return res.json(
+            {
+                error: error
+            }
+        )
         
     }
 }
