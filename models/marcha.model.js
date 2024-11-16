@@ -74,7 +74,9 @@ const marchaSchema = new Schema({
     puntosReglamentarias : {
         evaluadores: {type: String, required: false},
         usuario: {type: String, required: false},
-        puntos: {type: Number, required: false},
+        reglamentariaPuntos: {type: Number, required: false},
+        precisionPuntos: {type: Number, required: false},
+        puntosGeneral: {type: Number, required: false},
         comentario: {type: String, required: false}
     },
 
